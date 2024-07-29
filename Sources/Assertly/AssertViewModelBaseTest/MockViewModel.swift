@@ -7,7 +7,7 @@
 
 import Foundation
 
-open class MockViewModel: ViewModelProtocol {
+public class MockViewModel: ViewModelProtocol {
     
     public var title: String = "Mock Title"
     public var mockResults: [String: Any] = [:]
