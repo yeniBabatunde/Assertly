@@ -20,7 +20,7 @@ public protocol UnitTestable {
 }
 
 
-public class BaseTestCase<T: UnitTestable>: XCTestCase {
+open class BaseTestCase<T: UnitTestable>: XCTestCase {
    public var sut: T?
     
     public override func setUp() {

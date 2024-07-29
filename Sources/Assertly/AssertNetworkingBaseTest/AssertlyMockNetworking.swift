@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class MockNetworking: NetworkingProtocol {
+open class MockNetworking: NetworkingProtocol {
     var mockResult: Result<Decodable, Error>?
     
     public func request<T: Decodable>(_ endpoint: String, completion: @escaping (Result<T, Error>) -> Void) {
