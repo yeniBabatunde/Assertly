@@ -8,7 +8,7 @@
 import Foundation
 
 open class MockNetworking: NetworkingProtocol {
-    var mockResult: Result<Decodable, Error>?
+   public var mockResult: Result<Decodable, Error>?
     
     public func request<T: Decodable>(_ endpoint: String, completion: @escaping (Result<T, Error>) -> Void) {
         guard let result = mockResult as? Result<T, Error> else {
